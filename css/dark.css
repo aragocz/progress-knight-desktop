@@ -21,3 +21,8 @@
     background-color: rgb(82, 82, 82) !important;
     color: white !important
 }
+
+.dark #app-control-bar {
+    background-color: rgb(23, 23, 23) !important;
+    --buttonColor: #f0f0f0 !important;
+}

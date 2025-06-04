@@ -1,0 +1,35 @@
+{
+  "name": "progress-knight-desktop",
+  "version": "1.0.0",
+  "description": "Progress Knight but desktop",
+  "main": "wrapper.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --x64 --ia32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aragocz/progress-knight-desktop.git"
+  },
+  "author": "ihtasham42, aragocz",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/aragocz/progress-knight-desktop/issues"
+  },
+  "homepage": "https://github.com/aragocz/progress-knight-desktop#readme",
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "files": ["!**/LICENSE", "!**/README.md", "!**/dist/*"],
+    "executableName": "pkd",
+    "win": { 
+      "target": ["nsis"],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "shortcutName": "Progress Knight"
+    }
+  }
+}

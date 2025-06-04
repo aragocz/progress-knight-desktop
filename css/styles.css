@@ -1,3 +1,31 @@
+#app-control-bar {
+    --buttonColor: #000;
+    background-color: rgb(211, 211, 211);
+    height: 26px;
+    app-region: drag;
+    user-select: none;
+
+    & * {
+        app-region: no-drag;
+    }
+
+    & #trailing {
+        display: inline-flex;
+        float: right;
+    }
+}
+
+div.winButton {
+    height: 26px;
+    width: 36px;
+    margin-left: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(146, 146, 146, 0.1);
+    }
+}
+
 body {
     background-color: rgb(243, 243, 243);
 }

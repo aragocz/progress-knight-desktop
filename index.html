@@ -8,6 +8,13 @@
     <title>Progress Knight</title>
 </head>
 <body id="body" class="dark">
+    <div id="app-control-bar">
+        <div id="trailing">
+            <div class="winButton" id="minimize"><svg width="36px" height="26px"><rect style="fill: var(--buttonColor);" width="10" height="1" x="13" y="13"></rect></svg></div>
+            <div class="winButton" id="maximize"><svg width="36px" height="26px"><rect style="fill: none; stroke: var(--buttonColor);" width="10" height="8" x="13" y="9"></rect></svg></div>
+            <div class="winButton" id="exit"><svg width="36px" height="26px"><polygon style="fill: var(--buttonColor); fill-rule: evenodd; transform: translate(12px, 7px)" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon></svg></div>
+        </div>
+    </div>
     <div class="w3-margin"> 
         <h1>Progress Knight</h1>
         <div style="width: 1220px; height: 600px"> 
@@ -295,6 +302,7 @@
     </div>
 </body>
 
+<script type="text/javascript" src="js/renderer.js"></script>
 <script type="text/javascript" src="js/HackTimer.js"></script>
 <script type="text/javascript" src="js/classes.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
