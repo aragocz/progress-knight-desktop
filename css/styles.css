@@ -1,12 +1,22 @@
 #app-control-bar {
     --buttonColor: #000;
-    background-color: rgb(211, 211, 211);
+    background: linear-gradient(45deg, rgb(243, 243, 243), rgb(211, 211, 211));
     height: 26px;
     app-region: drag;
     user-select: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    
 
     & * {
         app-region: no-drag;
+    }
+
+    & #leading {
+        display: inline-flex;
+        float: left;
     }
 
     & #trailing {
@@ -28,6 +38,11 @@ div.winButton {
 
 body {
     background-color: rgb(243, 243, 243);
+    user-select: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .w3-bar-item {

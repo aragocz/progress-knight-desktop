@@ -1,6 +1,6 @@
 {
   "name": "progress-knight-desktop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Progress Knight but desktop",
   "main": "wrapper.js",
   "scripts": {
@@ -22,14 +22,24 @@
     "electron-builder": "^26.0.12"
   },
   "build": {
-    "files": ["!**/LICENSE", "!**/README.md", "!**/dist/*"],
+    "files": [
+      "!**/LICENSE",
+      "!**/README.md",
+      "!dist${/*}"
+    ],
     "executableName": "pkd",
-    "win": { 
-      "target": ["nsis"],
+    "win": {
+      "target": [
+        "nsis"
+      ],
       "icon": "icon.ico"
     },
     "nsis": {
-      "shortcutName": "Progress Knight"
+      "shortcutName": "Progress Knight",
+      "uninstallDisplayName": "Progress Knight"
     }
+  },
+  "dependencies": {
+    "electron-settings": "^4.0.4"
   }
 }

@@ -23,6 +23,6 @@
 }
 
 .dark #app-control-bar {
-    background-color: rgb(23, 23, 23) !important;
+    background: linear-gradient(45deg, rgb(32, 32, 32), rgb(23, 23, 23)) !important;
     --buttonColor: #f0f0f0 !important;
 }

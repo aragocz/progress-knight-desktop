@@ -4,7 +4,7 @@
 Progress Knight is a text-based incremental game, developed by Ihtasham42, which can be played on your browser. But desktop apps are cool, so I made one.
 
 ### Important Disclaimer
-I'm not in any way associated with Ihtasham42 and have not contributed to the original code in any way, nor have I altered the original code in this fork, except for changing some backend functions to make the app work right. The gameplay stays unchanged.
+I'm not in any way associated with Ihtasham42 and have not contributed to the original code in any way, nor have I altered the original code in this fork, except for changing some backend functions to make the app work right and adding some minor quality of life features (list at the bottom). The gameplay stays unchanged.
 
 ### What is Progress Knight about?
 Progress Knight is a life-sim incremental based in a fantasy/medieval setting, where you must progress through the career ladder and acquire new skills to become the ultimate being.
@@ -21,3 +21,7 @@ Progress Knight can be played on the following sites:
 - [Armor Games](https://armorgames.com/progress-knight-game/19095)
 - [Crazy Games](https://www.crazygames.com/game/progress-knight)
 - [Desktop App](https://github.com/aragocz/progress-knight-desktop/releases/tag/Release)
+
+### New quality of life features
+- Spacebar can pause/unpause the game
+- Tab, ⇧Tab, Q and E cycle through the different tabs
